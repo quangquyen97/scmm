@@ -7,4 +7,11 @@ module.exports = {
   db_host: process.env.DB_HOST,
   db_dialect: process.env.DB_DIALECT,
   db_port: process.env.DB_PORT,
+  timezone:"+07:00",
+  dialectOptions: {
+  ssl:{
+    require:true,
+    rejectUnauthorized:false
+  }
+  }
 }
